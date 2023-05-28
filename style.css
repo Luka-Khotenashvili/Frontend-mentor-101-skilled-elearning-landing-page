@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F2F2F2;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* 
+grid
+*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 340px;
+}
+.grid {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 340px;
+}
+.container {
+    max-width: 400px;
+    padding: 30px 28px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.cards img {
+    width: 56px;
+    position: relative;
+    top: -55px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg-gradient {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.hero-mobile {
+    max-width: 340px;
+    display: flex;
+    margin: 20px auto;
+    display: flex;
+}
+footer {
+    height: 120px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px;
+    width: 100%;
+    background-color: #13183F;
+}
+
+
+.logo-light {
+    margin: 22px 16px;
+}
+.logo-dark {
+    margin: 22px 16px;
+}
+
+
+@media screen and (min-width: 740px) {
+    .hero-mobile {
+        display: none;
+    }
+    body {
+        background-image: url(./assets/image-hero-tablet@2x.png);
+        background-repeat: no-repeat;
+        background-size: 640px 640px;
+        background-position: top -70px right -280px;
+    }
+    .cards {
+        width: 90%;
+        margin-top: 140px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .grid {
+        margin-left: 40px;
+    }
+    .hero {
+        padding: 20px 40px;
+    }
+    footer {
+        padding: 20px 40px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url(./assets/image-hero-desktop@2x.png);
+        background-repeat: no-repeat;
+        background-size: 900px;
+        background-position: top -70px right -280px;
+    }
+    .cards {
+        width: 80%;
+        margin-bottom: 120px;
+        margin-top: 340px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .grid {
+        margin-left: 80px;
+    }
+    .hero {
+        padding: 40px 80px;
+    }
+    footer {
+        padding: 20px 80px
+    }
+}
+
+
+
+
+/* 
+links
+*/
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.container a {
+    color: #F74780;
+}
+.container a:hover {
+    color: #FFA7C3;
+}
+
+.btn
+{
+    border-radius: 31.5px;
+    padding: 14px 30px;
+    margin: 16px 16px;
+}
+
+.btn1 {
+    margin: 16px;
+    background: #13183F;
+}
+.btn1:hover {
+    background: #666CA3;
+}
+.btn2 {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    margin: 16px 0px;
+}
+.btn2:hover {
+    background: linear-gradient(180deg, #FF6F48 -50%, #F02AA6 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+.btn3{
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    margin: 16px 16px;
+}
+.btn3:hover {
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+
+/* 
+typography
+*/
+p {
+    color: #83869A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+h1 {
+    margin-top: 20px;
+    color: #13183F;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+h3 {
+    color: #13183F;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    }
+a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
